@@ -35,7 +35,7 @@ Here, instead of using routing heuristics to compute the routing estimates in or
 
 We first define the following:
 
-$`\text{quality of solution} = \frac{\text{total distance without batching} - \text{objective value}}{\text{total distance without batching}}`$
+$\text{quality of solution} = \frac{\text{total distance without batching} - \text{objective value}}{\text{total distance without batching}}$
 
 where the total distance without batching is computed with only the routing heuristic (which is the trivial batching objective value, and the best routing heuristic was used - Optimal solver), and the objective value is the heuristic solution of the JOBPRP obtained by the respective Methods 1, 2 & 3. 
 
