@@ -97,6 +97,8 @@ We also computed the median time elapsed for each method of solving, by combinin
 <img src="img/median_time.png?raw=true" width="400"/>
 </p>
 
+Another important yet surprising finding in our experimental results is that the median time taken for Method 3’s solving is the lowest for warehouses with 20 and 30 aisles as compared to 8 and 10 aisles. At this point in time, we are not able to explain why that is the case for Method 3, but it may be possible that the number of aisles also had a role in influencing the batching process (besides the savings router which differs across methods).
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
