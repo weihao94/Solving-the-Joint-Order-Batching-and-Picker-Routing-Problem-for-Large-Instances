@@ -71,7 +71,7 @@ In this test instance, we observed that for an input with 10 orders, Method 2 S-
 <img src="img/batched_routes.png?raw=true" width="600"/>
 </p>
 
-At this stage, we are not able to draw anything conclusive, so we decided to look into the critical point in the batching process where a new batch was formed for Method 3. Denote the orders by their indices from 1 to 10. Then we obtained the batched orders - for Method 2 S-shape: Batches = {{3,4,1,5,9,10,2,6,8,7}} and Method 3: Batches = {{3,4,1,2,8,7}, {5,10,6,9}}. Next, we computed the savings matrix for Method 2 S-shape and Method 3:
+At this stage, we are not able to draw anything conclusive, so we decided to look into the critical point in the batching process where a new batch was formed for Method 3. Denote the orders by their indices from 1 to 10. Then we obtained the batched orders - for Method 2 S-shape: `Batches = {{3,4,1,5,9,10,2,6,8,7}}` and Method 3: `Batches = {{3,4,1,2,8,7}, {5,10,6,9}}`. Next, we computed the savings matrix for Method 2 S-shape and Method 3:
 
 <p align="center">
 <img src="img/savings_table.png?raw=true" width="500"/>
@@ -88,6 +88,8 @@ To analyze this critical step deeper, we refer to the savings matrix for Method 
 <p align="center">
 <img src="img/m3_savings.png?raw=true" width="500"/>
 </p>
+
+In the third step for Method 3, we observed that order pair `(5, 10)` had a higher savings than `(1, 5)` in the third step. On the contrary for Method 2 S-shape, it can be seen from Table 5.1 that order pair `(5, 10)` had a lower savings than `(1, 5)`. As a result, a new batch is formed for order pair `(5, 10)` in step 3 for Method 3, which ultimately lead to a higher total distance traveled for Method 3.
 
 ## References
 
