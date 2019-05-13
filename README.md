@@ -35,7 +35,7 @@ Here, instead of using routing heuristics to compute the routing estimates in or
 
 ### Exact Solving
 
-<img src="img/exact_results.png?raw=true" width="200"/>
+<img src="img/exact_results.png?raw=true" width="500"/>
 
 For exact solving, with a solver time limit of 1 hour, we were only able to obtain results with sufficient data points for small warehouse instances with 2 and 3 aisles. From the plots of their quality of solution, we observed that as the number of aisles increases, the gap between the median quality of solution for exact solving and heuristic solving with Methods 2 and 3 increases. No other generalizations can be made from the results obtained at the moment.
 
