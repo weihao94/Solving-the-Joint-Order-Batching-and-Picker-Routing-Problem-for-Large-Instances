@@ -34,3 +34,10 @@ Here, instead of using routing heuristics to compute the routing estimates in or
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
+
+[2] Kees Jan Roodbergen and RenÉde Koster. Routing methods for warehouses with multiple cross aisles. *International Journal of Production Research*, 39(9):1865–1883, 2001.
+
+[7] Wolsey L. A. Integer programming. 1998.
+
+[9] David L. Applegate, Robert E. Bixby, Vasek Chvatal, and William J. Cook. *The Traveling Salesman Problem: A Computational Study (Princeton Series
+in Applied Mathematics)*. Princeton University Press, Princeton, NJ, USA, 2007.
