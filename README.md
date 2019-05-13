@@ -71,6 +71,12 @@ In this test instance, we observed that for an input with 10 orders, Method 2 S-
 <img src="img/batched_routes.png?raw=true" width="600"/>
 </p>
 
+At this stage, we are not able to draw anything conclusive, so we decided to look into the critical point in the batching process where a new batch was formed for Method 3. Denote the orders by their indices from 1 to 10. Then we obtained the batched orders - for Method 2 S-shape: Batches = {{3,4,1,5,9,10,2,6,8,7}} and Method 3: Batches = {{3,4,1,2,8,7}, {5,10,6,9}}. Next, we computed the savings matrix for Method 2 S-shape and Method 3:
+
+<p align="center">
+<img src="img/savings_table.png?raw=true" width="500"/>
+</p>
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
