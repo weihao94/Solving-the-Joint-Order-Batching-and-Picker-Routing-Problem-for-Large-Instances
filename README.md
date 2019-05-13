@@ -94,7 +94,7 @@ In the third step for Method 3, we observed that order pair `(5, 10)` had a high
 We also computed the median time elapsed for each method of solving, by combining all same methods of solving with the S-shape and Largest Gap routers together. For e.g., we analyzed the results of Method 1 with S-shape, Largest Gap for the savings router together. We obtained the following plot as a result:
 
 <p align="center">
-<img src="img/median_time.png?raw=true" width="300"/>
+<img src="img/median_time.png?raw=true" width="400"/>
 </p>
 
 ## References
