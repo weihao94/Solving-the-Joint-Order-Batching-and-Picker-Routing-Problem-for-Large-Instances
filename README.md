@@ -10,6 +10,27 @@ routing heuristics. Instances with up to 50 orders were solved heuristically in 
 
 **Keywords**: integer programming, inventory management, order batching, order picking, picker routing
 
+## Methods Employed in Solving
+
+### ILP Solver
+
+To obtain optimal solutions to the ILP formulation, we employed a branch-and-cut solver to solve the formulation written in MiniZinc, an open-source constraint modeling language.
+
+### Method 1
+
+In this method, we first compute the order batching via the time savings heuristic (TSH) [2]. Picker routing heuristics were used to obtain estimates of the partial route distances, for use in the TSH. Partial routes were computed by running each of the following heuristics: Nearest Neighbor, S-shape and Largest gap.
+
+### Method 2
+
+This method involves the use of a heuristic with optimal routing for the final assignment of orders. In other words, we use the routing estimates obtained during the routing algorithms in the TSH (to batch orders), but once all orders have been assigned (batched), we solve for each picker optimally to find its optimal route.
+
+For our experiments, in the order batching stage of Method 2, we employ the TSH which uses the routing heuristics introduced in Method 1. Then once order batches are computed in Python 3, to solve for each picker’s route optimally (with their batched order), we employ the Concorde TSP Solver. In particular, once
+orders have been batched to each picker, the JOBPRP is equivalent to the general TSP problem [7] as picker capacities have already been handled in the routing heuristics in the TSH.
+
+### Method 3
+
+Here, instead of using routing heuristics to compute the routing estimates in order batching and routing of pickers after final assignment of batched orders, we employ the Concorde TSP solver [9] to compute optimal routes.
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
