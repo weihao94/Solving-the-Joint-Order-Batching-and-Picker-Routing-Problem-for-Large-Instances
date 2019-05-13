@@ -52,7 +52,7 @@ Another important observation is that across all large warehouse instances and a
 To gain deeper insights on the results obtained for the total distance traveled by the pickers, we plotted the box plots of quality of solution against the method of solving used for each large warehouse instance and for 320 picker capacity. The box plots are of the form:
 
 <p align="center">
-<img src="img/quality23_8_4_320.png?raw=true" width="500"/>
+<img src="img/quality23_8_4_320.png?raw=true" width="300"/>
 </p>
 
 ## References
