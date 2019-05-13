@@ -103,7 +103,7 @@ We also looked into how large an impact varying the number of blocks of each war
 for median time elapsed, we analyzed each method of solving as a whole, across all the savings routers.
 
 <p align="center">
-<img src="img/blocks_scalability.png?raw=true" width="400"/>
+<img src="img/blocks_scalability.png?raw=true" width="500"/>
 </p>
 
 From the results collected, we observed no clear result across Methods 2 and 3 when the number of blocks for each warehouse instance was varied. Increasing the number of blocks does not lead to a consistent increase (resp. decrease) in median total distance traveled. An interesting observation we made is that there are several warehouse instances having Method 2 (with either S-shape or Largest Gap router) produce a solution with a lower median total distance traveled than Method 3. An example can be found in Figure 5.10 above, where Method 2 with S-shape router produced a lower median total distance traveled than Method 3 across all blocks for a warehouse with 10 aisles.
