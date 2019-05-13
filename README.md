@@ -31,6 +31,16 @@ orders have been batched to each picker, the JOBPRP is equivalent to the general
 
 Here, instead of using routing heuristics to compute the routing estimates in order batching and routing of pickers after final assignment of batched orders, we employ the Concorde TSP solver [9] to compute optimal routes.
 
+## Results
+
+We first define the following:
+
+\begin{equation}
+	text{quality of solution} = \frac{\text{total distance without batching} - \text{objective value}}{\text{total distance without batching}}
+\end{equation}
+
+where the total distance without batching is computed with only the routing heuristic (which is the trivial batching objective value, and the best routing heuristic was used - Optimal solver), and the objective value is the heuristic solution of the JOBPRP obtained by the respective Methods 1, 2 & 3. 
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
