@@ -33,11 +33,11 @@ Here, instead of using routing heuristics to compute the routing estimates in or
 
 ## Results
 
-We first define the following:
+### Exact Solving
 
-$\text{quality of solution} = \frac{\text{total distance without batching} - \text{objective value}}{\text{total distance without batching}}$
+<img src="img/exact_results.png?raw=true"/>
 
-where the total distance without batching is computed with only the routing heuristic (which is the trivial batching objective value, and the best routing heuristic was used - Optimal solver), and the objective value is the heuristic solution of the JOBPRP obtained by the respective Methods 1, 2 & 3. 
+For exact solving, with a solver time limit of 1 hour, we were only able to obtain results with sufficient data points for small warehouse instances with 2 and 3 aisles. From the plots of their quality of solution, we observed that as the number of aisles increases, the gap between the median quality of solution for exact solving and heuristic solving with Methods 2 and 3 increases. No other generalizations can be made from the results obtained at the moment.
 
 ## References
 
