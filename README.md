@@ -41,6 +41,20 @@ Here, instead of using routing heuristics to compute the routing estimates in or
 
 For exact solving, with a solver time limit of 1 hour, we were only able to obtain results with sufficient data points for small warehouse instances with 2 and 3 aisles. From the plots of their quality of solution, we observed that as the number of aisles increases, the gap between the median quality of solution for exact solving and heuristic solving with Methods 2 and 3 increases. No other generalizations can be made from the results obtained at the moment.
 
+### Heuristic Solving for Large Instances
+
+From the results obtained from heuristic solving with Methods 1 to 3, we made some general observations across all large warehouse instances, the first being
+that Method 1 Nearest Neighbor is the fastest (with lowest median time) across all blocks. This is not highly unusual, as in our implementation of the Nearest Neighbor router, there was no sequence of nodes (node_sequence) to visit which contained several other nodes that are not pick nodes (like in S-shape and
+Largest Gap routers). This reduced the need for extensive computation of shortest paths, hence resulting in a significantly lower time to compute routes. The Nearest Neighbor router in Method 1 also resulted in the best (lowest) median objective value across all the other routers used in Method 1, except for 3 out of 16 results for Method 1. Note that the Nearest Neighbor heuristic is not used in practice in general, as actual aisles can be very narrow and it does not make sense for the picker to perform a u-turn in that narrow aisle, especially when the picker has a cart with them to store picks.
+
+Another important observation is that across all large warehouse instances and across all blocks, Method 2 (with its resp. routers) has a lower median objective value than Method 1 (with its resp. routers). This result is in line with the fact that using an optimal router instead of a routing heuristic for routing of pickers should give a objective value less than or equal to that of the routing heuristic. Thus, we decided to analyze only results from Methods without the Nearest Neighbor heuristic as a router, and excluded Method 1 from our analysis as its results were poorer than Methods 2 and 3.
+
+To gain deeper insights on the results obtained for the total distance traveled by the pickers, we plotted the box plots of quality of solution against the method of solving used for each large warehouse instance and for 320 picker capacity. The box plots are of the form:
+
+<p align="center">
+<img src="img/quality23_8_4_320.png?raw=true" width="500"/>
+</p>
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
