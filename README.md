@@ -10,6 +10,6 @@ routing heuristics. Instances with up to 50 orders were solved heuristically in 
 
 **Keywords**: integer programming, inventory management, order batching, order picking, picker routing
 
-# References
+## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
