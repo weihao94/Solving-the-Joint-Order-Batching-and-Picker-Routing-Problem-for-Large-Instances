@@ -55,6 +55,10 @@ To gain deeper insights on the results obtained for the total distance traveled 
 <img src="img/quality23_8_4_320.png?raw=true" width="300"/>
 </p>
 
+One interesting yet perplexing observation we made was that there are methods with a higher median quality of solution and lower spread than Method 3. An
+example can be found in the figure above, where Method 3 has a lower median quality of solution than Method 2 with S-shape and Largest Gap router. This result
+is counter-intuitive as a natural thought will be that Method 3, having both savings and batch router to be optimal routers, should yield a higher quality of solution than all methods that employ routing heuristics in solving. Our interpretation of this result is that using a routing heuristic instead of an optimal router as savings router can result in batching being performed in such a way that the overall objective value will be lower than in the case where an optimal router is used as savings router.
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
