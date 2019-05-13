@@ -99,6 +99,15 @@ We also computed the median time elapsed for each method of solving, by combinin
 
 Another important yet surprising finding in our experimental results is that the median time taken for Method 3’s solving is the lowest for warehouses with 20 and 30 aisles as compared to 8 and 10 aisles. At this point in time, we are not able to explain why that is the case for Method 3, but it may be possible that the number of aisles also had a role in influencing the batching process (besides the savings router which differs across methods).
 
+We also looked into how large an impact varying the number of blocks of each warehouse instance has on the median total distance traveled. Like with the case
+for median time elapsed, we analyzed each method of solving as a whole, across all the savings routers.
+
+<p align="center">
+<img src="img/blocks_scalability.png?raw=true" width="400"/>
+</p>
+
+From the results collected, we observed no clear result across Methods 2 and 3 when the number of blocks for each warehouse instance was varied. Increasing the number of blocks does not lead to a consistent increase (resp. decrease) in median total distance traveled. An interesting observation we made is that there are several warehouse instances having Method 2 (with either S-shape or Largest Gap router) produce a solution with a lower median total distance traveled than Method 3. An example can be found in Figure 5.10 above, where Method 2 with S-shape router produced a lower median total distance traveled than Method 3 across all blocks for a warehouse with 10 aisles.
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
