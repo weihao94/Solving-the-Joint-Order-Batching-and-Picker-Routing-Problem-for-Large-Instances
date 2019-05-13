@@ -83,6 +83,12 @@ So what happened during the batching? To find out more, we computed the steps of
 <img src="img/batching_steps.png?raw=true" width="500"/>
 </p>
 
+To analyze this critical step deeper, we refer to the savings matrix for Method 3:
+
+<p align="center">
+<img src="img/m3_savings.png?raw=true" width="500"/>
+</p>
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
