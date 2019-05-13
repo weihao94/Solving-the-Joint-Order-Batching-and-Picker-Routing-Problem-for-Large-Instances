@@ -1,4 +1,6 @@
-# Solving-the-Joint-Order-Batching-and-Picker-Routing-Problem-for-Large-Instances
+# Solving the Joint Order Batching and Picker Routing Problem for Large Instances
+
+A summary of the methods employed and results obtained for the project undertaken in partial fulfillment for the degree of Bachelor of Science with Honours in Applied Mathematics at the National University of Singapore.
 
 ## Abstract
 
