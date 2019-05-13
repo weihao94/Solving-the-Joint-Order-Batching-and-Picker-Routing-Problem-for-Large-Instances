@@ -91,6 +91,12 @@ To analyze this critical step deeper, we refer to the savings matrix for Method 
 
 In the third step for Method 3, we observed that order pair `(5, 10)` had a higher savings than `(1, 5)` in the third step. On the contrary for Method 2 S-shape, it can be seen from Table 5.1 that order pair `(5, 10)` had a lower savings than `(1, 5)`. As a result, a new batch is formed for order pair `(5, 10)` in step 3 for Method 3, which ultimately lead to a higher total distance traveled for Method 3.
 
+We also computed the median time elapsed for each method of solving, by combining all same methods of solving with the S-shape and Largest Gap routers together. For e.g., we analyzed the results of Method 1 with S-shape, Largest Gap for the savings router together. We obtained the following plot as a result:
+
+<p align="center">
+<img src="img/median_time.png?raw=true" width="300"/>
+</p>
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
