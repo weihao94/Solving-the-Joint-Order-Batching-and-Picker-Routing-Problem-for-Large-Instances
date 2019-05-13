@@ -62,7 +62,7 @@ is counter-intuitive as a natural thought will be that Method 3, having both sav
 To gain a deeper insight as to what happened during the batching for Methods 2 and 3, we plotted the batches and routes for the test instance which had Method 2 with a higher quality of solution than Method 3. The following is an example of one such test instance with 10 orders where Method 2 with S-shape has a higher quality of solution than Method 3:
 
 <p align="center">
-<img src="img/quality23_8_4_320.png?raw=true" width="400"/>
+<img src="img/fyp.png?raw=true" width="400"/>
 </p>
 
 ## References
