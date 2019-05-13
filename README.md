@@ -65,6 +65,12 @@ To gain a deeper insight as to what happened during the batching for Methods 2 a
 <img src="img/fyp.png?raw=true" width="600"/>
 </p>
 
+In this test instance, we observed that for an input with 10 orders, Method 2 S-shape produced 1 batched order as output whereas Method 3 produced 2 batched orders as output. Furthermore, when these batched orders have been routed with the respective batch routers, the total distance traveled by the pickers across all the routed batched orders in Method 3 is more than that of Method 2 S-shape. The following plots in Figures 5.6, 5.7 and 5.8 illustrates this.
+
+<p align="center">
+<img src="img/batched_routes.png?raw=true" width="700"/>
+</p>
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
