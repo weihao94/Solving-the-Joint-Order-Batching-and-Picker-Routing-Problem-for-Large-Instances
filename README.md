@@ -77,6 +77,12 @@ At this stage, we are not able to draw anything conclusive, so we decided to loo
 <img src="img/savings_table.png?raw=true" width="500"/>
 </p>
 
+So what happened during the batching? To find out more, we computed the steps of the batching, where we found that order 5 does not get added to the first batch of orders at the third step:
+
+<p align="center">
+<img src="img/batching_steps.png?raw=true" width="500"/>
+</p>
+
 ## References
 
 [1] Cristiano Arbex Valle, John E. Beasley, and Alexandre Salles da Cunha. Optimally solving the joint order batching and picker routing problem. *European Journal of Operational Research*, 262(3):817 – 834, 2017.
