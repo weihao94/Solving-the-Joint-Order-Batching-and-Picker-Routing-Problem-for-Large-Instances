@@ -1,0 +1,7 @@
+total: 91.62
+a: [1, 1, 1, 2, 1, 2, 2, 1, 2, 1, 1]
+x: [true, false, false, true, true, true, true, true, true, true, false, true, false, true, false, true, false, false, true, false, true, false, true, false, true, true, false, false, true, true, false, false, false, true, true, false, false, false, false, false, true, false, false, true, true, false, false, true, false, true, false, true, false, false, true, false, false, true, false, true, true, true, true, false, true, false, true, false, true, true, false, false, false, true, false, false, false, false, true, false, false, true, false, false, true, true, false, true]
+y: [17, 0, 0, 3, 0, 2, 0, 1, 0, 0, 0, 10, 0, 9, 0, 8, 0, 0, 7, 0, 1, 0, 2, 0, 3, 4, 0, 0, 12, 4, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 6, 0, 0, 5, 16, 0, 0, 14, 0, 13, 0, 12, 0, 0, 11, 0, 0, 17, 0, 16, 18, 18, 0, 0, 1, 0, 2, 0, 3, 4, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 6, 3, 0, 5]
+% time elapsed: 18.45 s
+----------
+==========
