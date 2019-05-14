@@ -1,2 +1,0 @@
-results/*.csv filter=lfs diff=lfs merge=lfs -text
-results/*.exact filter=lfs diff=lfs merge=lfs -text
