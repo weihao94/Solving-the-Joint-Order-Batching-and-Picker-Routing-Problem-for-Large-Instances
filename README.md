@@ -39,11 +39,11 @@ The results obtained from experimenting with the above methods are found in the 
 
 ### Types of Data Files
 
-**.exact**: Output from exact solving with CBC solver with the MiniZinc constraint model.
+`.exact`: Output from exact solving with CBC solver with the MiniZinc constraint model.
 
-**trivialbatching_<...>.csv**: Results from solving without batching involved (i.e. 1 order to 1 picker), and using the PyConcorde TSP solver for picker routing. The results from this is used in the computation of the quality of solution.
+`trivialbatching_<...>.csv`: Results from solving without batching involved (i.e. 1 order to 1 picker), and using the PyConcorde TSP solver for picker routing. The results from this is used in the computation of the quality of solution.
 
-**320_picker_capacity_<...>_test-results.csv**: Results from solving with Methods 1 to 3. The results from this is used in the computation of the quality of solution.
+`320_picker_capacity_<...>_test-results.csv`: Results from solving with Methods 1 to 3. The results from this is used in the computation of the quality of solution.
 
 ### Interpreting the Variables in the Datasets
 
