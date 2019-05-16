@@ -35,6 +35,8 @@ Here, instead of using routing heuristics to compute the routing estimates in or
 
 ## Data Files
 
+The results obtained from experimenting with the above methods are found in the `results` folder, where results for the ILP solver (exact solving) are found in `.exact` files, and results for Methods 1 to 3 are found in `.csv` files.
+
 ### Types of Data Files
 
 **.exact**: Output from exact solving with CBC solver with the MiniZinc constraint model.
