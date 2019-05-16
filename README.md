@@ -33,6 +33,46 @@ orders have been batched to each picker, the JOBPRP is equivalent to the general
 
 Here, instead of using routing heuristics to compute the routing estimates in order batching and routing of pickers after final assignment of batched orders, we employ the Concorde TSP solver [9] to compute optimal routes.
 
+## Data Files
+
+### Types of Data Files
+
+**.exact**: Output from exact solving with CBC solver with the MiniZinc constraint model.
+
+**trivialbatching_<...>.csv**: Results from solving without batching involved (i.e. 1 order to 1 picker), and using the PyConcorde TSP solver for picker routing. The results from this is used in the computation of the quality of solution.
+
+**320_picker_capacity_<...>_test-results.csv**: Results from solving with Methods 1 to 3. The results from this is used in the computation of the quality of solution.
+
+### Interpreting the Variables in the Datasets
+
+**Method Used**: Labelled as Methods 1 to 3.
+
+**Number of Orders**: Number of orders for that test instance, where items in orders need not be distinct.
+
+**Objective Value**: The total distance traversed by all the pickers combined from routing them with their batched order.
+
+**Time Elapsed (s)**: The time taken to compute batching of orders and routing of pickers.
+
+**Time Savings Router**: The heuristic used in computing savings. Here, we have *nn* - Nearest Neighbor, *sshape* - S-shape, *lgap* - Largest Gap, *concorde* - PyConcorde.
+
+**Order Batch Router**: The heuristic used in routing pickers once orders have been batched. Similarly, we have *nn* - Nearest Neighbor, *sshape* - S-shape, *lgap* - Largest Gap, *concorde* - PyConcorde.
+
+**Order File**: The order file generated from Foodmart Database.
+
+**Order Size**: Number of days worth of orders from a unique customer combined together. The days are 5, 10, 20.
+
+**Number of Aisles**: The number of Aisles in the warehouse instance.
+
+**Number of Extra Cross Aisles**: The number of cross-aisles partitioning the warehouse into blocks. For e.g., a warehouse with 1 block has 0 extra cross aisles, and a warehouse with 2 blocks has 1 extra cross aisle. Note that the number of extra cross aisles is equal to the number of blocks - 1.
+
+**Number of Shelves**: Number of shelves stacked vertically per pallet.
+
+**Number of Products**: Number of distinct products in the warehouse.
+
+**Picker Capacity**: Picker capacity for the test instance.
+
+**Number of Pickers**: Number of pickers required to pick all items from the batched orders. Note that each picker is assigned only to 1 batched order.
+
 ## Results
 
 ### Exact Solving
