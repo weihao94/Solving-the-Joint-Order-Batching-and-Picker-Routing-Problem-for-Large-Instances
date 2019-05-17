@@ -2,6 +2,10 @@
 
 A summary of the methods employed and results obtained for the project undertaken in partial fulfillment for the degree of Bachelor of Science with Honours in Applied Mathematics at the National University of Singapore.
 
+## Acknowledgements
+
+I would like to thank my industrial supervisor, Dr Melvin Zhang from [The Intelligent Warehouse](https://theintelligentwarehouse.com/) for his patience, guidance and knowledge. His insights have greatly strengthened the findings of this project.
+
 ## Abstract
 
 In this work, we investigate the problem of order batching and picker routing in warehouse storage areas. These problems are known to be capital and labour
